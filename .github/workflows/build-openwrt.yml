@@ -13,11 +13,6 @@ name: Build OpenWrt
 on:
   repository_dispatch:
   workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
   push:
     branches:
     - main
@@ -25,7 +20,7 @@ on:
     branches:
     - main
   schedule:
-    - cron: 0 2 * * *
+    - cron: "0 2 * * *"
 
 env:
   REPO_URL: https://github.com/orangepi-xunlong/openwrt
