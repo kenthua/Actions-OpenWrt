@@ -10,5 +10,5 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_PITCHDARKICE_WEBHOOK_GITHUB }}
-        SLACK_MESSAGE: 'git push :rocket:'
-        SLACK_TITLE: openwrt-build
+#        SLACK_MESSAGE: 'git push :rocket:'
+        SLACK_TITLE: 'openwrt-build | git push'
